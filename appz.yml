@@ -23,5 +23,6 @@ properties:
     CASSANDRA_USER_NAME: admin
     CASSANDRA_USER_PASSWORD:
        VAULT: CASSANDRA_USER_PASSWORD
+    ENABLE_FLUENTD: 1
     revision: 62
    
