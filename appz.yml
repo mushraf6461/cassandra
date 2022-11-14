@@ -1,5 +1,5 @@
 app:
-    name: Cassandra
+    name: Cassandra-exporter
     code: Cassabdra
     notify: mmushraf@ecloudcontrol.com
 
