@@ -1,1 +1,27 @@
+app:
+    name: Cassandra
+    code: Cassabdra
+    notify: mmushraf@ecloudcontrol.com
 
+build:
+    version: 3.11
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: cassandra-3.11
+
+
+deploy:
+    context: mushraf6461/DEV
+    replicas: 3
+    port:
+    - 9402
+    - 9500
+
+
+properties:
+    CASSANDRA_USER_NAME: admin
+    CASSANDRA_USER_PASSWORD:
+       VAULT: CASSANDRA_USER_PASSWORD
+    revision: 62
+   
