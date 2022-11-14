@@ -4,7 +4,7 @@ app:
     notify: mmushraf@ecloudcontrol.com
 
 build:
-    version: 3.11
+    version: '3.11'
     env: DEV
     build_file: none
     output_files: output/*.zip
@@ -13,7 +13,7 @@ build:
 
 deploy:
     context: mushraf6461/DEV
-    replicas: 3
+    replicas: 1
     port:
     - 9402
     - 9500
