@@ -4,7 +4,7 @@ app:
     notify: mmushraf@ecloudcontrol.com
 
 build:
-    version: '3.11'
+    version: 3.11
     env: DEV
     build_file: none
     output_files: output/*.zip
