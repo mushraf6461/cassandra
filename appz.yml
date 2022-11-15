@@ -1,6 +1,6 @@
 app:
-    name: Cassandra-exporter
-    code: Cassandra-exporter
+    name: cassandra-exporter
+    code: cassandra-exporter
     notify: mmushraf@ecloudcontrol.com
 
 build:
@@ -10,7 +10,6 @@ build:
     output_files: output/*.zip
     image_template: cassandra-3.11
 
-
 deploy:
     context: mushraf6461/DEV
     replicas: 1
@@ -18,11 +17,10 @@ deploy:
     - 9402
     - 9500
 
-
 properties:
     CASSANDRA_USER_NAME: admin
     CASSANDRA_USER_PASSWORD:
        VAULT: CASSANDRA_USER_PASSWORD
     ENABLE_FLUENTD: 1
-    revision: 67
+    revision: 68
    
